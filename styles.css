@@ -8,3 +8,27 @@ img {
     max-width: 100%;
     margin: 10px;
 }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #343a40;
+    color: #adb5bd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c77dff;
+}
+
+/* For panels or bordered elements */
+.panel {
+    background-color: #495057;
+    border: 1px solid #adb5bd; /* This gives the border using the text color, adjust if needed */
+}
+
+/* If you want to use the highlight color for specific text */
+.highlight {
+    color: #c77dff;
+}
