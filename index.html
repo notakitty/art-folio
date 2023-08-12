@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="styles.css">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- device scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
@@ -24,14 +27,24 @@
 <!-- 2. Gallery Sections -->
 <div class="gallery" id="gallery1">
     <!-- Image 1 -->
-    <img src="images/rainbowshapes_web.png" alt="Description for Rainbow Shapes">
+    <img src="images/orangestudy.png" alt="Description for Orange Study">
 
     <!-- Image 2 -->
-    <img src="images/sticker_cat4.png" alt="Description for Sticker Cat">
+    <img src="images/rainbowshapes_web.png" alt="Description for Rainbow Shapes">
 
     <!-- Image 3 -->
+    <img src="images/sticker_cat4.png" alt="Description for Sticker Cat">
+
+    <!-- Image 4 -->
+    <img src="images/study_male.png" alt="Description for Study Male">
+
+    <!-- Image 5 -->
     <img src="images/sunny_study.png" alt="Description for Sunny Study">
+
+    <!-- Image 6 -->
+    <img src="images/violet2.png" alt="Description for Violet">
 </div>
+
 
 <!-- If you have more galleries, you can replicate the above gallery div, and adjust the id (e.g., id="gallery2", id="gallery3", etc.). -->
 
@@ -49,6 +62,14 @@
         <input type="submit" value="Send">
     </form>
 </section>
-
+<!-- javascript snippet for lazy loading -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let images = document.querySelectorAll('img');
+        images.forEach(function(img) {
+            img.setAttribute('loading', 'lazy');
+        });
+    });
+</script>
 </body>
 </html>
