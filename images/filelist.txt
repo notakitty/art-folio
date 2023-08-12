@@ -1,4 +1,0 @@
-filelist.txt
-rainbowshapes_web.png
-sticker_cat4.png
-sunny_study.png

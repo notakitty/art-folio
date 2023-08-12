@@ -1,5 +1,10 @@
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* This will create a 3-column grid. Adjust as needed. */
-    gap: 10px; /* Gap between images. Adjust as needed. */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+img {
+    max-width: 100%;
+    margin: 10px;
 }
