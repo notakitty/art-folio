@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <!-- Meta tags and title here -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Welcome to My Portfolio</h1>
-<p>This is a simple page for my portfolio. More to come soon!</p>
+
+<!-- 1. Header and Menu -->
+<header>
+    <h1>Your Portfolio Name</h1>
+    <nav>
+        <ul>
+            <li><a href="#gallery1">Gallery 1</a></li>
+            <!-- Other gallery links, About and Contact links -->
+        </ul>
+    </nav>
+</header>
+
+<!-- 2. Gallery Sections -->
+<!-- 2. Gallery Sections -->
+<div class="gallery" id="gallery1">
+    <!-- Image 1 -->
+    <img src="images/rainbowshapes_web.png" alt="Description for Rainbow Shapes">
+
+    <!-- Image 2 -->
+    <img src="images/sticker_cat4.png" alt="Description for Sticker Cat">
+
+    <!-- Image 3 -->
+    <img src="images/sunny_study.png" alt="Description for Sunny Study">
+</div>
+
+<!-- If you have more galleries, you can replicate the above gallery div, and adjust the id (e.g., id="gallery2", id="gallery3", etc.). -->
+
+<!-- 3. About Section -->
+<section id="about">
+    <!-- Content about you -->
+    <p>Your about content here...</p>
+</section>
+
+<!-- 4. Contact Section -->
+<section id="contact">
+    <!-- Your contact form -->
+    <form action="your_form_handling_url" method="post">
+        <!-- Form fields like name, email, message, etc. -->
+        <input type="submit" value="Send">
+    </form>
+</section>
+
 </body>
 </html>
