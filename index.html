@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags and title here -->
     <title>Your Portfolio Name</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
-    <!-- device scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 </head>
 <body>
 
-<!-- 1. Header and Menu -->
-<header>
-    <h1>Your Portfolio Name</h1>
+<h1>Your Portfolio Name</h1>
+
+<div class="fixed-nav">
     <nav>
-        <ul>
-            <li><a href="#gallery1">Gallery 1</a></li>
-            <!-- Other gallery links, About and Contact links -->
+        <ul class="gallery-nav">
+            <li><a href="#paintings" data-tab="paintings">Paintings</a></li>
+            <li><a href="#studies" data-tab="studies">Studies</a></li>
+            <li><a href="#stickers" data-tab="stickers">Stickers</a></li>
+            <li><a href="#sculpture" data-tab="sculpture">Sculpture</a></li>
+        </ul>
+        <ul class="info-nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-</header>
-
-<!-- 2. Gallery Sections -->
-<div class="gallery" id="gallery1">
-    <!-- Image 1 -->
-    <img src="images/orangestudy.png" alt="Description for Orange Study">
-
-    <!-- Image 2 -->
-    <img src="images/rainbowshapes_web.png" alt="Description for Rainbow Shapes">
-
-    <!-- Image 3 -->
-    <img src="images/sticker_cat4.png" alt="Description for Sticker Cat">
-
-    <!-- Image 4 -->
-    <img src="images/study_male.png" alt="Description for Study Male">
-
-    <!-- Image 5 -->
-    <img src="images/sunny_study.png" alt="Description for Sunny Study">
-
-    <!-- Image 6 -->
-    <img src="images/violet2.png" alt="Description for Violet">
 </div>
 
+<div class="gallery" id="paintings">
+    <img src="images/paintings/brushtest2watercolorfinal.png" alt="Description for brushtest2watercolorfinal">
+    <img src="images/paintings/portrait_512sqrblk_t5.png" alt="Description for portrait_512sqrblk_t5">
+    <img src="images/paintings/rainbowshapes_web.png" alt="Description for rainbowshapes_web">
+    <img src="images/paintings/violet2.png" alt="Description for violet2">
+</div>
 
-<!-- If you have more galleries, you can replicate the above gallery div, and adjust the id (e.g., id="gallery2", id="gallery3", etc.). -->
+<!-- Studies Gallery Section -->
+<div class="gallery" id="studies">
+    <img src="images/studies/orangestudy.png" alt="">
+    <img src="images/studies/study_male.png" alt="">
+    <img src="images/studies/sunny_study.png" alt="">
+</div>
 
-<!-- 3. About Section -->
-<section id="about">
-    <!-- Content about you -->
-    <p>Your about content here...</p>
-</section>
+<div class="gallery" id="stickers">
+    <img src="images/stickers/sticker_cat.png">
+    <img src="images/stickers/sticker_cat2.png">
+    <img src="images/stickers/sticker_cat3.png">
+    <img src="images/stickers/sticker_cat4.png">
+    <img src="images/stickers/sticker_cat5.png">
+    <img src="images/stickers/sticker_cat6.png">
+</div>
 
-<!-- 4. Contact Section -->
-<section id="contact">
-    <!-- Your contact form -->
-    <form action="your_form_handling_url" method="post">
-        <!-- Form fields like name, email, message, etc. -->
-        <input type="submit" value="Send">
-    </form>
-</section>
-<!-- javascript snippet for lazy loading -->
+<div class="gallery" id="sculpture">
+    <img src="images/sculpture/sculpture1.png">
+    <img src="images/sculpture/sculpture2.png">
+</div>
+
 <script>
+    // This function handles the gallery tab behavior
+    function openGallery(galleryName) {
+        // Hide all gallery sections
+        var galleries = document.querySelectorAll('.gallery');
+        galleries.forEach(function(gallery) {
+            gallery.style.display = 'none';
+        });
+
+        // Show the clicked or specified gallery
+        var activeGallery = document.getElementById(galleryName);
+        if (activeGallery) {
+            activeGallery.style.display = 'block';
+        }
+    }
+
+    // The DOMContentLoaded event will ensure the script runs once the DOM is fully loaded
     document.addEventListener("DOMContentLoaded", function() {
+        // Set all images on the page to lazy loading
         let images = document.querySelectorAll('img');
         images.forEach(function(img) {
             img.setAttribute('loading', 'lazy');
         });
+
+        // Add event listeners to gallery navigation links to trigger gallery display
+        var links = document.querySelectorAll('.fixed-nav a[data-tab]');
+        links.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();  // Prevent default link behavior
+                openGallery(this.getAttribute('data-tab'));  // Open the clicked gallery
+            });
+        });
+
+        // Set 'paintings' as the default gallery to display on page load
+        openGallery('paintings');
     });
+
 </script>
 </body>
 </html>
