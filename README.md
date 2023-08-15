@@ -9,12 +9,11 @@ dir /B > filelist.txt
 
 - [x] Implement menu
 - [x] Test adding more images
-- [ ] Consider grid vs native image shapes
+- [x] Implemented Masonry
 - [x] Separate galleries by content and theme
-- [ ] Solutions to automate adding new images and rebuilding
-- [ ] Keep some documentation not to get lost lol
+- [x] Split image links and script files
+- [ ] Documentation and How To customise from template
 - [ ] Share this as a template for friends if it doesn't look terrible
-- [ ] Create a dynamic gallery generator
 - [ ] Build 'contact' and 'about' pages
-- [ ] Draft copyright documentation
+- [ ] Add MIT license thingy or whatever appropriate
 
