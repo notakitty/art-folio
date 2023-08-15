@@ -1,3 +1,8 @@
+/* Base reset and global styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #343a40;
@@ -12,28 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #c77dff;
 }
 
-img {
-    max-width: 100%;
-    margin: 10px;
-}
-
-/* Hide all galleries by default */
-.gallery {
-    display: none;
-    /* other properties */
-}
-
-/* Make the "paintings" gallery visible by default */
-#paintings {
-    display: grid;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
+/* Navigation styles */
 .fixed-nav {
     position: fixed;
     top: 0;
@@ -59,9 +43,9 @@ nav ul {
 }
 
 nav a {
-    font-family: 'Ubuntu', sans-serif; /* Set font family */
-    text-decoration: none; /* Remove underline */
-    color: #c77dff; /* Set color */
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: #c77dff;
     transition: color 0.3s;
 }
 
@@ -69,6 +53,38 @@ nav a:hover {
     color: #ad5edf;
 }
 
+/* Gallery Styles */
+.gallery {
+    background: #343a40;
+}
+
+.gallery-item img {
+    max-width: 400px; /* This will ensure the image width doesn't exceed its container's width */
+    max-height: 400px; /* This will ensure the image height doesn't exceed 300px */
+    margin: 0.7%; /* This will center the image within its container */
+}
+
+/* Masonry Grid Setup */
+.grid-sizer,
+.grid-item {
+    width: 160px;  /* Masonry columns size */
+    height: 120px;
+    float: left; /* Part of the Masonry setup */
+    background: #343a40;
+}
+
+.grid-item img {
+    display: block;  /* Ensure images take up full height of their container */
+    max-width: 100%; /* Images fit within their container width */
+    height: auto;    /* Keep image proportions */
+}
+
+/* Make the "paintings" gallery visible by default */
+#paintings {
+    display: block;
+}
+
+/* Additional Styling */
 .right-links {
     display: flex;
     gap: 15px;
