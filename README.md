@@ -16,4 +16,5 @@ dir /B > filelist.txt
 - [ ] Share this as a template for friends if it doesn't look terrible
 - [ ] Build 'contact' and 'about' pages
 - [ ] Add MIT license thingy or whatever appropriate
+- [ ] Fix layout on mobile devices (responsive)
 
