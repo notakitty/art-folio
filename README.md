@@ -6,11 +6,16 @@ dir /B > filelist.txt
 ```
 ## Features
 
-- grid layout for pictures
+- [grid](https://masonry.desandro.com) layout for pictures
 - deploy on github pages
 - lightweight
 - the final result should look like a pinterest feed (fixed column width but variable image height and infinite scroll)
 - layout overall needs to be **responsive** and look consistent across devices
+- back to top button
+- nav bar with gallery sections curated by content type (each gallery is its own feed)
+- title color #00b8e6
+- highlight hover color B #ff3377
+- background color #33334d
 
 ## To-Do
 
