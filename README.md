@@ -4,6 +4,13 @@ To fetch all folder file names into a neat .txt in the current directory:
 ```bash
 dir /B > filelist.txt
 ```
+## Features
+
+- grid layout for pictures
+- deploy on github pages
+- lightweight
+- the final result should look like a pinterest feed (fixed column width but variable image height and infinite scroll)
+- layout overall needs to be **responsive** and look consistent across devices
 
 ## To-Do
 
