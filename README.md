@@ -55,14 +55,14 @@ This setup provides a zero-configuration tool for local development. You can see
 
 ## To-Do
 
-- [x] Implement menu
-- [x] Test adding more images
-- [x] Implemented Masonry
-- [x] Separate galleries by content and theme
-- [x] Split image links and script files
+- [ ] Implement Nav Bar
+- [ ] Implement back to top
+- [ ] Restyle the CSS with appropriate accent colors
+- [ ] Separate galleries by content and theme and link tabs to nav bar
+- [ ] organise image different from current div thingy
 - [ ] Documentation and How To customise from template
 - [ ] Share this as a template for friends if it doesn't look terrible
 - [ ] Build 'contact' and 'about' pages
 - [ ] Add MIT license thingy or whatever appropriate
-- [ ] Fix layout on mobile devices (responsive)
+- [ ] ? should be fixed needs testing - Fix layout on mobile devices (responsive)
 
