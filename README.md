@@ -42,7 +42,7 @@ This setup provides a zero-configuration tool for local development. You can see
 
 ## Features
 
-- [grid](https://masonry.desandro.com) layout for pictures
+- [grid](http://miromannino.github.io/Justified-Gallery/) layout for pictures
 - deploy on github pages
 - lightweight
 - the final result should look like a pinterest feed (fixed column width but variable image height and infinite scroll)
