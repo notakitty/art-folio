@@ -4,6 +4,42 @@ To fetch all folder file names into a neat .txt in the current directory:
 ```bash
 dir /B > filelist.txt
 ```
+
+Local testing for idiots:
+
+#### Local Development with `http-server`
+
+1. **Install Node.js**:
+   - Download and install [Node.js](https://nodejs.org/). Opt for the LTS version.
+
+2. **Open Command Prompt or Terminal**:
+   - **Windows**: Press `Win + R`, type `cmd`, and hit Enter.
+   - **Mac**: Open the Terminal application.
+   - Navigate to your project directory:
+     ```bash
+     cd path/to/your/repo/folder
+     ```
+
+3. **Install `http-server`**:
+   - Install the `http-server` package globally. This allows you to run the server from any directory:
+     ```bash
+     npm install http-server -g
+     ```
+
+4. **Run the Server**:
+   - Start the server from your project directory:
+     ```bash
+     http-server . -p 8000
+     ```
+
+5. **Access Your Site**:
+   - Open a browser and visit:
+     ```
+     http://localhost:8000
+     ```
+
+This setup provides a zero-configuration tool for local development. You can see live changes by refreshing the browser after editing your files.
+
 ## Features
 
 - [grid](https://masonry.desandro.com) layout for pictures
