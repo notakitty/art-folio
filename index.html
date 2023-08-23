@@ -1,66 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Your Portfolio Name</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <title>Justified Gallery Example</title>
 
+    <!-- Link to css -->
+    <link rel="stylesheet" href="/justifiedGallery.min.css">
+
+</head>
 <body>
 
-<h1>Your Portfolio Name</h1>
+<!-- The gallery markup will go here -->
 
-<div class="fixed-nav">
-    <nav>
-        <!-- Gallery Navigation -->
-        <ul class="gallery-nav">
-            <li><a href="#paintings" data-tab="paintings">Paintings</a></li>
-            <li><a href="#studies" data-tab="studies">Studies</a></li>
-            <li><a href="#stickers" data-tab="stickers">Stickers</a></li>
-            <li><a href="#sculptures" data-tab="sculptures">Sculptures</a></li>
-        </ul>
-        <!-- Additional Navigation -->
-        <ul class="info-nav">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<div id="basicExample">
+    <a href="/images/paintings/brushtest2watercolorfinal.png">
+        <img alt="brushtest2watercolorfinal" src="/images/paintings/brushtest2watercolorfinal.png"/>
+    </a>
+    <a href="/images/paintings/flower girl 32.png">
+        <img alt="flower girl 32" src="/images/paintings/flower girl 32.png"/>
+    </a>
+    <a href="/images/paintings/orangestudy.png">
+        <img alt="orangestudy" src="/images/paintings/orangestudy.png"/>
+    </a>
+    <a href="/images/paintings/portrait_512sqrblk_t5.png">
+        <img alt="portrait_512sqrblk_t5" src="/images/paintings/portrait_512sqrblk_t5.png"/>
+    </a>
+    <a href="/images/paintings/rainbowshapes_web.png">
+        <img alt="rainbowshapes_web" src="/images/paintings/rainbowshapes_web.png"/>
+    </a>
+    <a href="/images/paintings/study_male.png">
+        <img alt="study_male" src="/images/paintings/study_male.png"/>
+    </a>
+    <a href="/images/paintings/sunny_study.png">
+        <img alt="sunny_study" src="/images/paintings/sunny_study.png"/>
+    </a>
+    <a href="/images/paintings/violet2.png">
+        <img alt="violet2" src="/images/paintings/violet2.png"/>
+    </a>
+    <a href="/images/paintings/waifu_fun3.png">
+        <img alt="waifu_fun3" src="/images/paintings/waifu_fun3.png"/>
+    </a>
 </div>
 
-<!-- Paintings Gallery Section -->
-<div class="gallery" id="paintings">
-    <!-- Grid sizer for Masonry -->
-    <div class="grid-sizer"></div>
-</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/jquery.justifiedGallery.min.js"></script>
 
-<!-- Studies Gallery Section -->
-<div class="gallery" id="studies">
-    <!-- Grid sizer for Masonry -->
-    <div class="grid-sizer"></div>
-</div>
-
-<!-- Stickers Gallery Section -->
-<div class="gallery" id="stickers">
-    <!-- Grid sizer for Masonry -->
-    <div class="grid-sizer"></div>
-</div>
-
-<!-- Sculptures Gallery Section -->
-<div class="gallery" id="sculptures">
-    <!-- Grid sizer for Masonry -->
-    <div class="grid-sizer"></div>
-</div>
-
-<!-- Load Masonry & ImagesLoaded Libraries first -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-
-<!-- Then load your custom scripts -->
-<script src="imageData.js"></script>
-<script src="portfolio.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#basicExample").justifiedGallery();
+    });
+</script>
 
 </body>
-
 </html>

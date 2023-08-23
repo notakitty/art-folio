@@ -1,8 +1,10 @@
-0_flower girl 4ups-gigapixel-low_res-scale-6_00x.png
 brushtest2watercolorfinal.png
 filelist.txt
 flower girl 32.png
+orangestudy.png
 portrait_512sqrblk_t5.png
 rainbowshapes_web.png
+study_male.png
+sunny_study.png
 violet2.png
 waifu_fun3.png

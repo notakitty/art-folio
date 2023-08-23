@@ -1,4 +1,0 @@
-filelist.txt
-orangestudy.png
-study_male.png
-sunny_study.png
