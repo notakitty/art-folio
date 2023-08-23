@@ -1,6 +1,6 @@
 brushtest2watercolorfinal.png
 filelist.txt
-flower girl 32.png
+flower32.png
 orangestudy.png
 portrait_512sqrblk_t5.png
 rainbowshapes_web.png
