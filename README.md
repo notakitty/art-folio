@@ -68,14 +68,15 @@ This setup provides a zero-configuration tool for local development. You can see
 
 ## To-Do
 
-- [ ] Implement Nav Bar
+- [x] Implement Nav Bar
 - [ ] Implement back to top
-- [ ] Restyle the CSS with appropriate accent colors
-- [ ] Separate galleries by content and theme and link tabs to nav bar
-- [ ] organise image different from current div thingy
+- [x] Restyle the CSS with appropriate accent colors
+- [ ] Adjust Justified Gallery settings to make larger images.
+- [ ] Populate gallery content.
+- [ ] Test gallery sections.
 - [ ] Documentation and How To customise from template
 - [ ] Share this as a template for friends if it doesn't look terrible
 - [ ] Build 'contact' and 'about' pages
 - [ ] Add MIT license thingy or whatever appropriate
-- [ ] ? should be fixed needs testing - Fix layout on mobile devices (responsive)
+- [x] Responsive Layout
 
