@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Justified Gallery Example</title>
 
-    <!-- Link to css -->
+    <!-- Stylesheets -->
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts: Overpass and Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- Justified Gallery Stylesheet -->
     <link rel="stylesheet" href="justifiedGallery.min.css">
-
 </head>
+
 <body>
+<!-- Title -->
+<div class="header">
+    <h1 class="title">NOTAKITTY.</h1>
+    <button class="contact-button">Contact</button>
+</div>
 
-<!-- The gallery markup will go here -->
+<!-- Navigation -->
+<div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#paintings">Paintings</a>
+        <a href="#gameart">Game Art</a>
+        <a href="#stickers">Stickers</a>
+    </div>
+</div>
 
+<!-- Gallery -->
 <div id="basicExample">
     <a href="images/paintings/brushtest2watercolorfinal.png">
         <img alt="brushtest2watercolorfinal" src="images/paintings/brushtest2watercolorfinal.png"/>
@@ -43,14 +73,34 @@
     </a>
 </div>
 
+<!-- Scripts -->
+<!-- jQuery library -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Justified Gallery Plugin -->
 <script src="jquery.justifiedGallery.min.js"></script>
 
 <script>
+    // Initialize Justified Gallery
     $(document).ready(function() {
         $("#basicExample").justifiedGallery();
     });
+
+    // Toggle Responsive Nav
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        var y = document.getElementById("navLinks");
+        if (y.style.display === "flex") {
+            y.style.display = "none";
+            x.classList.remove("responsive");
+        } else {
+            y.style.display = "flex";
+            x.classList.add("responsive");
+        }
+    }
+
 </script>
 
 </body>
+
 </html>
