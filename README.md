@@ -5,7 +5,7 @@ To fetch all folder file names into a neat .txt in the current directory:
 dir /B > filelist.txt
 ```
 
-Local testing for idiots:
+# Local testing for idiots:
 
 #### Local Development with `http-server`
 
@@ -37,6 +37,19 @@ Local testing for idiots:
      ```
      http://localhost:8000
      ```
+
+6. **Testing Site Locally on a Simulated Mobile Device**
+
+- Open site in **Google Chrome**.
+- Right-click and select `Inspect` or use `Ctrl + Shift + I` (`Cmd + Option + I` on Mac).
+- Click the device icon at the top-left of the Developer Tools or use `Ctrl + Shift + M` (`Cmd + Option + M` on Mac).
+- Choose a mobile device from the dropdown (e.g., iPhone X, Galaxy S5).
+- Refresh the page for proper device simulation.
+- (Optional) Use the rotate icon for landscape/portrait view.
+- Interact with your site in the simulated environment.
+
+> Note: While this tool is valuable for quick checks, always test on actual mobile devices for full compatibility.
+
 
 This setup provides a zero-configuration tool for local development. You can see live changes by refreshing the browser after editing your files.
 
