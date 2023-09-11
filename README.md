@@ -70,6 +70,7 @@ This setup provides a zero-configuration tool for local development. You can see
 
 - [x] Implement Nav Bar
 - [ ] Implement back to top
+- [ ] resize and test gallery settings
 - [x] Restyle the CSS with appropriate accent colors
 - [ ] Adjust Justified Gallery settings to make larger images.
 - [ ] Populate gallery content.
